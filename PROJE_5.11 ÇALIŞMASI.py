@@ -22,7 +22,7 @@ class Ogretmen(Kisi):
     def bilgileri_goster(self):
         return f"{super().bilgileri_goster()}, Ders: {self.ders}"
 
-# Örnek Kullanım
+
 ogrenci = Ogrenci("Ali", 20, "S12345")
 ogretmen = Ogretmen("Ayşe", 30, "Matematik")
 
