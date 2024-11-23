@@ -1,7 +1,6 @@
 import random
 from abc import ABC, abstractmethod
 
-# Soyut Sınıflar
 class Player(ABC):
     def __init__(self, name):
         self.name = name
@@ -15,7 +14,6 @@ class ComputerPlayer(ABC):
     def __init__(self):
         pass
 
-# Somut Sınıflar
 class HumanPlayer(Player):
     def make_move(self):
         move = input("Taş, Kağıt, veya Makas seçin: ").lower()
@@ -27,7 +25,7 @@ class RandomComputerPlayer(ComputerPlayer):
     def make_move(self):
         return random.choice(['taş', 'kağıt', 'makas'])
 
-# Oyun Mantığı
+
 class Game:
     def __init__(self):
         self.human_player = None
